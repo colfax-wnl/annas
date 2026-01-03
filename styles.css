@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Lora', Georgia, serif;
     color: #2c2c2c;
     background-color: #fff;
     line-height: 1.6;
@@ -39,7 +39,7 @@ a {
 }
 
 .header-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
     font-style: italic;
     letter-spacing: 0.5px;
@@ -80,7 +80,7 @@ a {
 .tagline p {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-style: italic;
     line-height: 1.8;
 }
@@ -108,14 +108,14 @@ a {
 }
 
 .testimonial p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-style: italic;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
 
 .testimonial cite {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-style: normal;
 }
 
@@ -173,13 +173,13 @@ a {
 }
 
 .footer-column h2 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
 .footer-column p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
