@@ -30,26 +30,31 @@ a {
 /* Header */
 .header {
     background-color: transparent;
-    color: #2c2c2c;
-    padding: 1rem 2rem;
+    color: #fff;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .header-title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
     font-style: italic;
     letter-spacing: 0.5px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .instagram-link {
     position: absolute;
     left: 1.5rem;
-    color: #2c2c2c;
-    opacity: 0.8;
+    color: #fff;
+    opacity: 0.9;
     transition: opacity 0.2s ease;
 }
 
@@ -61,6 +66,7 @@ a {
 .hero {
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .hero-image {
@@ -80,7 +86,7 @@ a {
 .tagline p {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-style: italic;
     line-height: 1.8;
 }
@@ -108,14 +114,14 @@ a {
 }
 
 .testimonial p {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-style: italic;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
 
 .testimonial cite {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     font-style: normal;
 }
 
@@ -143,18 +149,17 @@ a {
 /* Decorative Divider */
 .divider {
     background-color: #fdf6f0;
-    padding: 4rem 0 2rem 0;
+    padding: 3rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
-.divider-dot {
-    width: 8px;
-    height: 8px;
+.divider-line {
+    width: 100%;
+    max-width: 200px;
+    height: 1px;
     background-color: #e8a598;
-    border-radius: 50%;
 }
 
 /* Footer */
@@ -173,13 +178,13 @@ a {
 }
 
 .footer-column h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
 
 .footer-column p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
