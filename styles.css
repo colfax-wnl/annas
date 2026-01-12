@@ -194,6 +194,12 @@ a {
     opacity: 0.8;
 }
 
+.footer-column .closure-notice {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #c25a4a;
+}
+
 .footer-column a {
     transition: opacity 0.2s ease;
 }
