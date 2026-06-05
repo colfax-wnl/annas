@@ -195,6 +195,7 @@ a {
 }
 
 .footer-column .closure-notice {
+    display: none;
     margin-top: 1rem;
     font-style: italic;
     color: #c25a4a;
