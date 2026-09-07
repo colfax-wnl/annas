@@ -108,9 +108,34 @@ a {
     text-align: center;
 }
 
-.testimonial blockquote {
+.testimonial-carousel {
     max-width: 800px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-track {
+    position: relative;
+}
+
+.testimonial-slide {
+    display: none;
+    animation: testimonial-fade 0.6s ease;
+}
+
+.testimonial-slide.is-active {
+    display: block;
+}
+
+@keyframes testimonial-fade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .testimonial p {
@@ -123,6 +148,28 @@ a {
 .testimonial cite {
     font-size: 1.5rem;
     font-style: normal;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.testimonial-dot {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #ddd0c4;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-dot.is-active {
+    background-color: #b8845a;
 }
 
 /* Photo Gallery */

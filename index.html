@@ -40,10 +40,22 @@
 
     <!-- Testimonial Section -->
     <section class="testimonial">
-        <blockquote>
-            <p>"I've been taking my daughter here since she was three weeks old. It's our favorite weekend tradition!"</p>
-            <cite>-Colfax Selby, West Roxbury resident</cite>
-        </blockquote>
+        <div class="testimonial-carousel" id="testimonial-carousel">
+            <div class="testimonial-track">
+                <blockquote class="testimonial-slide is-active">
+                    <p>"I've been taking my daughter here since she was three weeks old. It's our favorite weekend tradition!"</p>
+                    <cite>-Colfax, West Roxbury resident</cite>
+                </blockquote>
+                <blockquote class="testimonial-slide">
+                    <p>"I want more donuts&nbsp;&hellip; PLEASE!!"</p>
+                    <cite>-Sophie, West Roxbury resident (2yo)</cite>
+                </blockquote>
+            </div>
+            <div class="testimonial-dots">
+                <button type="button" class="testimonial-dot is-active" aria-label="Show testimonial 1"></button>
+                <button type="button" class="testimonial-dot" aria-label="Show testimonial 2"></button>
+            </div>
+        </div>
     </section>
 
     <!-- Photo Gallery -->
@@ -81,5 +93,44 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (function () {
+            var carousel = document.getElementById('testimonial-carousel');
+            if (!carousel) return;
+            var slides = carousel.querySelectorAll('.testimonial-slide');
+            var dots = carousel.querySelectorAll('.testimonial-dot');
+            var current = 0;
+            var intervalId;
+
+            function showSlide(index) {
+                slides[current].classList.remove('is-active');
+                dots[current].classList.remove('is-active');
+                current = (index + slides.length) % slides.length;
+                slides[current].classList.add('is-active');
+                dots[current].classList.add('is-active');
+            }
+
+            function next() {
+                showSlide(current + 1);
+            }
+
+            function startAutoplay() {
+                intervalId = setInterval(next, 6000);
+            }
+
+            dots.forEach(function (dot, index) {
+                dot.addEventListener('click', function () {
+                    clearInterval(intervalId);
+                    showSlide(index);
+                    startAutoplay();
+                });
+            });
+
+            if (slides.length > 1) {
+                startAutoplay();
+            }
+        })();
+    </script>
 </body>
 </html>
