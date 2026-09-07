@@ -194,7 +194,11 @@ a {
 }
 
 .gallery-image--offset {
-    margin-top: 2rem;
+    transform: translateY(1.25rem);
+}
+
+.gallery-image--top {
+    object-position: center top;
 }
 
 /* Decorative Divider */
@@ -271,7 +275,7 @@ a {
     }
 
     .gallery-image--offset {
-        margin-top: 0;
+        transform: none;
     }
 }
 
