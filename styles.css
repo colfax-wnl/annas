@@ -193,6 +193,10 @@ a {
     border-radius: 4px;
 }
 
+.gallery-image--offset {
+    margin-top: 2rem;
+}
+
 /* Decorative Divider */
 .divider {
     background-color: #fdf6f0;
@@ -264,6 +268,10 @@ a {
 
     .gallery-image {
         height: 250px;
+    }
+
+    .gallery-image--offset {
+        margin-top: 0;
     }
 }
 
