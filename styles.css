@@ -50,18 +50,6 @@ a {
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-.instagram-link {
-    position: absolute;
-    left: 1.5rem;
-    color: #fff;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-}
-
-.instagram-link:hover {
-    opacity: 1;
-}
-
 /* Hero Section */
 .hero {
     width: 100%;
