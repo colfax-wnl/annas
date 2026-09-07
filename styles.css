@@ -193,15 +193,15 @@ a {
     gap: 1.5rem;
 }
 
+.gallery-column--offset {
+    margin-top: 3rem;
+}
+
 .gallery-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 4px;
-}
-
-.gallery-image--offset {
-    margin-top: 1.5rem;
 }
 
 .gallery-image--top {
@@ -283,10 +283,6 @@ a {
 
     .gallery-image {
         height: 250px;
-    }
-
-    .gallery-image--offset {
-        margin-top: 0;
     }
 
     .order-1 { order: 1; }
