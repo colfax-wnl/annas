@@ -103,16 +103,21 @@ a {
 }
 
 .testimonial-track {
-    position: relative;
+    display: grid;
 }
 
 .testimonial-slide {
-    display: none;
-    animation: testimonial-fade 0.6s ease;
+    grid-area: 1 / 1;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .testimonial-slide.is-active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    animation: testimonial-fade 0.6s ease;
 }
 
 @keyframes testimonial-fade {
